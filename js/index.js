@@ -50,37 +50,37 @@ navs[4].textContent = (siteContent["nav"]["nav-item-5"]);
 navs[5].textContent = (siteContent["nav"]["nav-item-6"]);
 navs.forEach(contents => contents.style.color = "green")
 
-const headerOne = document.querySelector('h1')
-headerOne.innerHTML = ('Dom <br> Is <br> Awesome')
+const hdrOne = document.querySelector('h1')
+hdrOne.innerHTML = ('Dom <br> Is <br> Awesome')
 
-let secondImg = document.getElementById("cta-img")
-secondImg.setAttribute('src', siteContent["cta"]["img-src"])
+let secImg = document.getElementById("cta-img")
+secImg.setAttribute('src', siteContent["cta"]["img-src"])
 
-const middleImage = document.getElementById('middle-img')
-middleImage.src = (siteContent["main-content"]["middle-img-src"])
+const midImage = document.getElementById('middle-img')
+midImage.src = (siteContent["main-content"]["middle-img-src"])
 
 const btn = document.querySelector('button')
 btn.textContent = (siteContent.cta .button)
 
-const headerFour = document.querySelectorAll('h4')
-headerFour[0].textContent = (siteContent["main-content"]["features-h4"]);
-headerFour[1].textContent = (siteContent["main-content"]["about-h4"])
-headerFour[2].textContent = (siteContent["main-content"]["services-h4"])
-headerFour[3].textContent = (siteContent["main-content"]["product-h4"])
-headerFour[4].textContent = (siteContent["main-content"]["vision-h4"])
-headerFour[5].textContent = (siteContent["contact"]["contact-h4"])
+const hdrFour = document.querySelectorAll('h4')
+hdrFour[0].textContent = (siteContent["main-content"]["features-h4"]);
+hdrFour[1].textContent = (siteContent["main-content"]["about-h4"])
+hdrFour[2].textContent = (siteContent["main-content"]["services-h4"])
+hdrFour[3].textContent = (siteContent["main-content"]["product-h4"])
+hdrFour[4].textContent = (siteContent["main-content"]["vision-h4"])
+hdrFour[5].textContent = (siteContent["contact"]["contact-h4"])
 
-const paragraphs = document.querySelectorAll('p')
-paragraphs[0].textContent = (siteContent["main-content"]["features-content"])
-paragraphs[1].textContent = (siteContent["main-content"]["about-content"])
-paragraphs[2].textContent = (siteContent["main-content"]["services-content"])
-paragraphs[3].textContent = (siteContent["main-content"]["product-content"])
-paragraphs[4].textContent = (siteContent["main-content"]["vision-content"])
+const para = document.querySelectorAll('p')
+para[0].textContent = (siteContent["main-content"]["features-content"])
+para[1].textContent = (siteContent["main-content"]["about-content"])
+para[2].textContent = (siteContent["main-content"]["services-content"])
+para[3].textContent = (siteContent["main-content"]["product-content"])
+para[4].textContent = (siteContent["main-content"]["vision-content"])
 
-paragraphs[5].innerHTML = '123 Way 456 Street <br> Somewhere, USA';
-paragraphs[6].textContent = (siteContent["contact"]["phone"])
-paragraphs[7].textContent = (siteContent["contact"]["email"])
-paragraphs[8].textContent = (siteContent["footer"]["copyright"])
+para[5].innerHTML = '123 Way 456 Street <br> Somewhere, USA';
+para[6].textContent = (siteContent["contact"]["phone"])
+para[7].textContent = (siteContent["contact"]["email"])
+para[8].textContent = (siteContent["footer"]["copyright"])
 
 let allNavs = document.querySelector("nav")
 
