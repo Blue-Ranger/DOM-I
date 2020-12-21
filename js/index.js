@@ -40,3 +40,61 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+const navs = document.querySelectorAll('a')
+navs[0].textContent = (siteContent["nav"]['nav-item-1']);
+navs[1].textContent = (siteContent["nav"]["nav-item-2"]);
+navs[2].textContent = (siteContent["nav"]["nav-item-3"]);
+navs[3].textContent = (siteContent["nav"]["nav-item-4"]);
+navs[4].textContent = (siteContent["nav"]["nav-item-5"]);
+navs[5].textContent = (siteContent["nav"]["nav-item-6"]);
+navs.forEach(contents => contents.style.color = "green")
+
+const hdrOne = document.querySelector("h1")
+hdrOne.innerHTML = "Dom<br>Is<br>Awesome"
+
+const secImg = document.getElementById("cta-img")
+secImg.setAttribute("src", siteContent["cta"]["img-src"])
+
+const midImg = document.getElementById("middle-img")
+midImg.setAttribute("src", siteContent["main-content"]["middle-img-src"])
+
+const mSection = document.querySelectorAll("h4")
+mSection[0].textContent = (siteContent ["main-content"]["features-h4"]);
+mSection[1].textContent = (siteContent ["main-content"]["about-h4"]);
+mSection[2].textContent = (siteContent ["main-content"]["services-h4"]);
+mSection[3].textContent = (siteContent ["main-content"]["product-h4"]);
+mSection[4].textContent = (siteContent ["main-content"]["vision-h4"]);
+mSection[5].textContent = (siteContent ["contact"]["contact-h4"]);
+
+const para = document.querySelectorAll("p")
+para[0].textContent = (siteContent["main-content"]["features-content"]);
+para[1].textContent = (siteContent["main-content"]["about-content"]);
+para[2].textContent = (siteContent["main-content"]["services-content"]);
+para[3].textContent = (siteContent["main-content"]["product-content"]);
+para[4].textContent = (siteContent["main-content"]["vision-content"]);
+
+para[5].innerHTML = "123 Way 456 Street<br>Somewhere, USA"
+para[6].textContent = (siteContent["contact"]["phone"]);
+para[7].textContent = (siteContent["contact"]["email"]);
+para[8].textContent = (siteContent["footer"]["copyright"]);
+
+const btn = document.querySelector("button")
+btn.textContent = (siteContent["cta"]["button"])
+btn.style.color = "red"
+
+
+const allNavs = document.querySelector("nav")
+
+const prependedA = document.createElement("a")
+prependedA.textContent = "PrependedA"
+prependedA.href = "#"
+allNavs.prepend(prependedA)
+prependedA.style.color = "purple"
+
+const appendedA = document.createElement("a")
+appendedA.textContent = "AppendedA"
+appendedA.href = "#"
+allNavs.appendChild(appendedA)
+appendedA.style.color = "red"
